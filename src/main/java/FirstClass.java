@@ -30,6 +30,7 @@ public class FirstClass {
         oldSchoolNotebook.checkPrice();
         oldSchoolNotebook.checkWeight();
         oldSchoolNotebook.checkYear();
-        LeapYear.yearView();
+        LeapYear leapYear = new LeapYear();
+        leapYear.yearViev();
     }
 }
