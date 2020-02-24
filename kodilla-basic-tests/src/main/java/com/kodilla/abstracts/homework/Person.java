@@ -26,11 +26,11 @@ public class Person {
 
         Person[] people = {kamil, ola, jan, przemek, monika};
 
-        public void jobPerson() {
-            for (int i = 0; i <= people.length; i++) {
-                System.out.println(people[i].firstName + people[i].job);
-            }
-        }
+//        public void jobPerson() {
+//            for (int i = 0; i <= people.length; i++) {
+//                System.out.println(people[i].firstName + people[i].job);
+//            }
+//        }
     }
 }
 
