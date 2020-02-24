@@ -12,7 +12,7 @@ public class Person {
         this.job = job;
     }
 
-    public static void main(String[] args) {
+    public static void jobResponsibilities() {
 
         Doctor doctor = new Doctor();
         Policeman policeman = new Policeman();
@@ -32,6 +32,10 @@ public class Person {
             peopleJob = people[i].firstName + people[i].job;
         }
         System.out.println(peopleJob);
+    }
+
+    public static void main(String[] args) {
+        jobResponsibilities();
     }
 }
 
