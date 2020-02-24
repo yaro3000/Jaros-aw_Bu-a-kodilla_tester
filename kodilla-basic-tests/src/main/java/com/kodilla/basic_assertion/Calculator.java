@@ -9,6 +9,6 @@ public class Calculator {
         return a - b;
     }
     public double squared(int a) {
-        return Math.sqrt(a);
+        return a * a;
     }
 }

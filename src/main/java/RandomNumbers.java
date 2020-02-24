@@ -10,12 +10,12 @@ public class RandomNumbers {
         for(int i=number + number; i < 5001; i++ ) {
             int randomNumber = random.nextInt(31);
             number = randomNumber;
-            }
+        }
         return number;
     }
     private static int maxValue() {
         int numbersRandom = randomNumbers();
-        if (maxNumber<=numbersRandom) {
+        if (maxNumber<numbersRandom) {
             maxNumber = numbersRandom;
         }
         return maxNumber;
