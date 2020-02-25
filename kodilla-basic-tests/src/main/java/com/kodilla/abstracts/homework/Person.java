@@ -26,12 +26,11 @@ public class Person {
 
         Person[] people = {kamil, ola, jan, przemek, monika};
 
-        String peopleJob = null;
-
-        for (int i = 0; i <= people.length; i++) {
-            peopleJob = people[i].firstName + people[i].job;
+        int i = 0;
+        while(i<people.length) {
+            System.out.println(people[i].firstName + people[i].job);
+            i++;
         }
-        System.out.println(peopleJob);
     }
 
     public static void main(String[] args) {
