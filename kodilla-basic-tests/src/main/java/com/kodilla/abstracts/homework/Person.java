@@ -6,7 +6,7 @@ public class Person {
     int age;
     String job;
 
-    public Person(String firstName, int age, String job ) {
+    public Person(String firstName, int age, String job) {
         this.firstName = firstName;
         this.age = age;
         this.job = job;
@@ -27,7 +27,7 @@ public class Person {
         Person[] people = {kamil, ola, jan, przemek, monika};
 
         int i = 0;
-        while(i<people.length) {
+        while (i < people.length) {
             System.out.println(people[i].firstName + people[i].job);
             i++;
         }

@@ -16,15 +16,6 @@ public class RandomNumbers {
             minNumber = minValue(randomNumber);
         }
         return sum;
-
-// for(int i=sum + sum; i < 5001; i++ ) {
-//
-// int randomNumber = random.nextInt(31);
-// System.out.println("Wylosowana lcizba" + randomNumber);
-// maxValue(randomNumber);
-// minValue(randomNumber);
-// sum = randomNumber;
-// }
     }
 
     private static int maxValue(int randomNumber) {

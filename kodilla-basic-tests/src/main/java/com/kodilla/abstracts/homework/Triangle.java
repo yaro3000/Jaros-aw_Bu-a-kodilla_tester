@@ -1,6 +1,6 @@
 package com.kodilla.abstracts.homework;
 
-public class Triangle extends Shape{
+public class Triangle extends Shape {
 
     int a = 6;
     int b = 6;
@@ -9,7 +9,7 @@ public class Triangle extends Shape{
 
     @Override
     public void surfaceArea() {
-        double triangleSurface = c/2*h;
+        double triangleSurface = c / 2 * h;
         System.out.println(triangleSurface);
     }
 

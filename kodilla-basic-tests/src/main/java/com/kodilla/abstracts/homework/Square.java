@@ -6,13 +6,13 @@ public class Square extends Shape {
 
     @Override
     public void surfaceArea() {
-        int squareSurface = a^2;
+        int squareSurface = a ^ 2;
         System.out.println(squareSurface);
     }
 
     @Override
     public void circuit() {
-        int squareCircuit = a + a + a +a;
+        int squareCircuit = a + a + a + a;
         System.out.println(squareCircuit);
     }
 }
