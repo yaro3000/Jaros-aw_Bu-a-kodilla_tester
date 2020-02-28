@@ -7,6 +7,7 @@ public class CashMachine {
 
     public CashMachine() {
         this.moneyHolder = new int[0];
+        this.numberOfTransaction = 0;
     }
 
     public void transactions(int value) {
@@ -60,7 +61,7 @@ public class CashMachine {
         return number;
     }
 
-    public  double getAveragePayement() {
+    public double getAveragePayement() {
         if (this.moneyHolder.length == 0) {
             return 0;
         }

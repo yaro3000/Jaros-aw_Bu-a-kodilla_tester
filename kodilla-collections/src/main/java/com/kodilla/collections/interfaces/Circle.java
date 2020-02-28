@@ -3,6 +3,13 @@ package com.kodilla.collections.interfaces;
 public class Circle implements Shape {
     private double radius;
 
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                '}';
+    }
+
     public Circle(double radius) {
         this.radius = radius;
     }
