@@ -9,8 +9,9 @@ import java.util.Random;
 
 public class CarsApplication {
 
+    static Random random = new Random();
+
     public static void main(String[] args) {
-        Random random = new Random();
         Car[] cars = new Car[random.nextInt(15) + 1];
         for (int i = 0; i < cars.length; i++)
             cars[i] = drawCar();
@@ -19,7 +20,6 @@ public class CarsApplication {
     }
 
     private static Car drawCar() {
-        Random random = new Random();
         int drawCarKind = random.nextInt(3);
         int a = random.nextInt(50) + 20;
         if (drawCarKind == 0)
