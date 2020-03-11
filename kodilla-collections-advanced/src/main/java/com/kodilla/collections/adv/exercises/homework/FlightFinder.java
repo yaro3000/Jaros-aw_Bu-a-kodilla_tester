@@ -8,7 +8,7 @@ public class FlightFinder {
     public List<Flight> findFlightsFrom(String departure) {
         FlightRepository flightRepository = new FlightRepository();
         List<Flight> departures = new ArrayList<>();
-        for (Flight flight : flightRepository.flightList.getOrDefault(departure, Collections.emptyList())) {
+        for (Flight flight : flightRepository.flightList.(departure, Collections.emptyList())) {
             departures.add(flight);
         }
         return departures;
