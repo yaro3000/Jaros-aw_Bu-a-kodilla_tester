@@ -9,8 +9,8 @@ class FlightFinderTestSuite {
     @Test
     public void testFindFlightsFrom() {
         FlightFinder flightFinder = new FlightFinder();
-        flightFinder.findFlightsFrom("Krakow");
+        flightFinder.findFlightsFrom("Kraków");
 
+        assertEquals(4, flightFinder);
     }
-
 }

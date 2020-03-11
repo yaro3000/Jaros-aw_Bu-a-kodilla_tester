@@ -5,32 +5,19 @@ import java.util.*;
 
 public class FlightRepository {
 
-    static List<Flight> flightList = new ArrayList<>();
-
-   public void addFlight(String departure, String arrival) {
-       Flight flight = new Flight(departure, arrival);
-       flightList.add(flight);
-   }
-
-    static List<Flight> getFlightsTable() {
-        return flightList;
+    public static List<Flight> getFlightTable() {
+        List<Flight> flights = new ArrayList<>();
+        flights.add(new Flight("Kraków", "Moskwa"));
+        flights.add(new Flight("Kraków", "Warszawa"));
+        flights.add(new Flight("Kraków", "Paryż"));
+        flights.add(new Flight("Kraków", "Rzym"));
+        flights.add(new Flight("Londyn", "Oslo"));
+        flights.add(new Flight("Praga", "Berlin"));
+        flights.add(new Flight("Katowice", "Madryt"));
+        flights.add(new Flight("Warszawa", "Los Angeles"));
+        flights.add(new Flight("Pekin", "Ottawa"));
+        flights.add(new Flight("Detroit", "Warszawa"));
+        flights.add(new Flight("Grańsk", "Kraków"));
+        return flights;
     }
-
-//    Map<String, List<Flight>> flightList = new HashMap<>();
-
-//    public void addFlight(String departure, Flight arriving) {
-//        List<Flight> flights = flightList.getOrDefault(departure, new ArrayList<>());
-//        flights.add(arriving);
-//        flightList.put(departure, flights);
-//    }
-
-//    public List<Flight> getFlightsTable(String departure, Flight arrival) {
-//       List<Flight> result = new ArrayList<>();
-//       for(Flight allFlights: flightList.getOrDefault(departure, Collections.emptyList())) {
-//            if(allFlights.getDeparture().equals(arrival))
-//                result.add(allFlights);
-//       }
-//       return result;
-//    }
-
 }
