@@ -17,7 +17,7 @@ public class BookApplication {
         books.add(createBook.bookManager("Wiedźmin", "Andrzej Sapkowski"));
         books.add(createBook.bookManager("fsdfdsfsd", "sdfsdfsd Sapkosdfdsfsdwski"));
 
-        for(Book book: books) {
+        for (Book book : books) {
             createBook.createBookList(book);
         }
 

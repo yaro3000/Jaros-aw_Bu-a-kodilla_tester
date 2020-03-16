@@ -3,7 +3,6 @@ package com.kodilla.exception.homework;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
 public class Warehouse {
 
@@ -19,10 +18,10 @@ public class Warehouse {
     }
 
     public List<Order> getOrder(String number) throws Exception {
-            Predicate<Order> orderPredicate = o -> o.getNumber().equals(number);
-            Order orderList = orders.stream()
-                    .filter(orderPredicate).findFirst().orElseThrow(() -> new OrderDoesntExistException());
-            System.out.println(orderList);
-            return orders;
+        Predicate<Order> orderPredicate = o -> o.getNumber().equals(number);
+        Order orderList = orders.stream()
+                .filter(orderPredicate).findFirst().orElseThrow(() -> new OrderDoesntExistException());
+        System.out.println(orderList);
+        return orders;
     }
 }
