@@ -4,13 +4,23 @@ import java.util.*;
 
 public class FlightFinder {
 
-    Map<String, List<FlightRepository>> flightFinder = new HashMap<>();
-
-    public List<FlightRepository> findFlightsFrom(String departure) {
-        return flightFinder.getOrDefault(departure, Collections.emptyList());
+    public List<Flight> findFlightsFrom(String departure) {
+        List<Flight> flightsFrom = new ArrayList<>();
+        for (Flight flight:FlightRepository.getFlightTable()) {
+            if(flight.getDeparture().equals(departure)) {
+                flightsFrom.add(flight);
+            }
+        }
+        return flightsFrom;
     }
 
-    public List<FlightRepository> findFlightsTo(String arrival) {
-        return flightFinder.getOrDefault(arrival, Collections.emptyList());
+    public List<Flight> findFlightsTo(String arrival) {
+        List<Flight> flightsTo = new ArrayList<>();
+        for (Flight flight:FlightRepository.getFlightTable()) {
+            if(flight.getArrival().equals(arrival)) {
+                flightsTo.add(flight);
+            }
+        }
+        return flightsTo;
     }
 }

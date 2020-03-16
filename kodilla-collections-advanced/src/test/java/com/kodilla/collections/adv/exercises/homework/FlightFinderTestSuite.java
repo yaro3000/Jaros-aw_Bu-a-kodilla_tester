@@ -11,6 +11,7 @@ class FlightFinderTestSuite {
         FlightFinder flightFinder = new FlightFinder();
         flightFinder.findFlightsFrom("Kraków");
 
-        assertEquals(4, flightFinder);
+
+        assertEquals(4, flightFinder.findFlightsFrom("Kraków").size());
     }
 }

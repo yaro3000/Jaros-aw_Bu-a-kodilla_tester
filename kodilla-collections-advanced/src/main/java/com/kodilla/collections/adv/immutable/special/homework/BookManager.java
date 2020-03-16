@@ -1,23 +1,19 @@
 package com.kodilla.collections.adv.immutable.special.homework;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 public class BookManager {
 
-   List<Book> bookList = new LinkedList<>();
+    List<Book> books = new ArrayList<>();
 
     public Book bookManager(String title, String author) {
-        Book book = new Book(title, author);
-        createBookList(book);
-        return book;
+        return new Book(title, author);
     }
 
     public List<Book> createBookList(Book book) {
-        if(!bookList.contains(book));
-        bookList.add(book);
-        return bookList;
+        if (!books.contains(book))
+            books.add(book);
+        return books;
     }
 }
-
-
