@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 public class AirportRepositoryTestSuite {
 
     @Test
-    public void testIsAirportInUse() throws AirportNotFoundException{
+    public void testIsAirportInUse() throws AirportNotFoundException {
         // given
         AirportRepository airportRepository = new AirportRepository();
         // when
