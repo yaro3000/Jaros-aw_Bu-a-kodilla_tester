@@ -15,6 +15,10 @@ public class Order {
         this.name = name;
     }
 
+    public Order() {
+
+    }
+
     public double getPrice() {
         return price;
     }

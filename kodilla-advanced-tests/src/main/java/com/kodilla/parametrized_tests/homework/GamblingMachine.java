@@ -24,7 +24,7 @@ public class GamblingMachine {
         }
     }
 
-    private Set<Integer> generateComputerNumbers() {
+    public Set<Integer> generateComputerNumbers() {
         Set<Integer> numbers = new HashSet<>();
         Random generator = new Random();
         while (numbers.size() < 6) {

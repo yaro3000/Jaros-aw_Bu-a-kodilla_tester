@@ -9,6 +9,6 @@ public class WarehouseApp {
         warehouse.addOrder("Chicken");
         warehouse.addOrder("Fish");
 
-        warehouse.getOrder("Oud");
+        warehouse.getOrder("ouk");
     }
 }

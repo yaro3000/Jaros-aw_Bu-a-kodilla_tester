@@ -20,6 +20,6 @@ public class Warehouse {
     public Order getOrder(String number) throws Exception {
         Predicate<Order> orderPredicate = o -> o.getNumber().equals(number);
         return orders.stream()
-                .filter(orderPredicate).findFirst().orElseThrow(() -> new OrderDoesntExistException());
+                .filter(orderPredicate).findFirst().orElseThrow(OrderDoesntExistException::new);
     }
 }

@@ -25,7 +25,7 @@ public class WarehouseTest {
         warehouse.addOrder("432");
         warehouse.addOrder("9876");
         warehouse.addOrder("567890");
-        Order order = warehouse.getOrder("1234");
+        Order order = warehouse.getOrder("12ee34");
         assertTrue(order instanceof Order);
     }
 
@@ -39,7 +39,8 @@ public class WarehouseTest {
         warehouse.addOrder("432");
         warehouse.addOrder("9876");
         warehouse.addOrder("567890");
-        Order order = warehouse.getOrder("erwerwer");
+        Order order = warehouse.getOrder("dasdasd");
+        System.out.println("dupa blada");
         assertNull(order);
     }
 }
