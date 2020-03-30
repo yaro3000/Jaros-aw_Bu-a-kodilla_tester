@@ -1,6 +1,5 @@
 package com.kodilla.execution_model.homework;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,16 +12,16 @@ public class Shop {
         this.orderList.add(order);
     }
 
-    public List<Order> getDateList(LocalDate min, LocalDate max) {
-//        if(orderList.equals(order.getDate() < ??))
-            return orderList;
-    }
+//    public List<Order> getDateList(LocalDate min, LocalDate max) {
+//        if()
+//            return orderList;
+//    }
 
     public List<Order> getOrderList(int max, int min) {
         return orderList;
     }
 
-    public int getAllOrderList() {
+    public int getSumOrders() {
         return orderList.size();
     }
 
