@@ -20,20 +20,18 @@ public class Shop {
     }
 
     public List<Order> getOrderList(int max, int min) {
-        return orderList;
+        return orderList.stream().filter(order -> order.getPrice() < max && order.getPrice() > min).collect(Collectors.toList());
     }
 
     public int getSumOrders() {
         return orderList.size();
     }
 
-//    public int orderPriceSum() {
-//        int sum = 0;
-//        int i = 0;
-//        for(i <= orderList.size(), i++) {
-//            Order price = orderList.get(i);
-//            sum += price.getPrice();
-//        }
-//        return sum;
-//    }
+    public int orderPriceSum() {
+        int sum = 0;
+        for (int i = 0; i <= orderList.size(); i++) {
+            sum += order.getPrice();
+        }
+        return sum;
+    }
 }
