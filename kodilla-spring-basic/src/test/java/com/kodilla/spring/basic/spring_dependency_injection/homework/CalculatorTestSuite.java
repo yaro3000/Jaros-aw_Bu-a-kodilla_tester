@@ -13,7 +13,7 @@ public class CalculatorTestSuite {
     public void shouldCorrectDisplay() {
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring.basic");
         Display bean = context.getBean(Display.class);
-        Double number = bean.display(22.12);
+        double number = bean.display(22.12);
         Assertions.assertNotNull(number);
     }
 
@@ -21,7 +21,7 @@ public class CalculatorTestSuite {
     public void shouldCorrectAdd() {
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring.basic");
         Calculator bean = context.getBean(Calculator.class);
-        Double number = bean.add(7, 3);
-        Assertions.assertEquals(10, 10);
+        double number = bean.add(7, 3);
+        Assertions.assertEquals(10, number);
     }
 }
