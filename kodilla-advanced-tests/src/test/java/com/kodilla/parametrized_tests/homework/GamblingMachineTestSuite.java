@@ -1,7 +1,7 @@
 package com.kodilla.parametrized_tests.homework;
 
 public class GamblingMachineTestSuite {
-
+//
 //    GamblingMachine gamblingMachine = new GamblingMachine();
 //
 //    @ParameterizedTest

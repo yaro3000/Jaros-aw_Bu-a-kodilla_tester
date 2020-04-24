@@ -1,9 +1,8 @@
 package com.kodilla.spring.basic.dependency_injection.homework;
 
-public class ShippingCenter implements NotificationService{
+public class ShippingCenter implements NotificationService {
 
     private DeliveryService deliveryService;
-
 
     public ShippingCenter(DeliveryService deliveryService) {
         this.deliveryService = deliveryService;

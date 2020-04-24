@@ -10,30 +10,30 @@ public class Calculator {
 
     @Autowired
     public void setDisplay(Display display) {
-        this.showResult = showResult;
+        this.showResult = display;
     }
 
     public double add(double a, double b) {
         double result = a + b;
         showResult.display(result);
-        return a + b;
+        return result;
     }
 
     public double subtract(double a, double b) {
-        double result = a / b;
+        double result = a - b;
         showResult.display(result);
-        return a - b;
+        return result;
     }
 
     public double multiply(double a, double b) {
         double result = a * b;
         showResult.display(result);
-        return a * b;
+        return result;
     }
 
     public double divide(double a, double b) {
         double result = a / b;
         showResult.display(result);
-        return a / b;
+        return result;
     }
 }

@@ -1,31 +1,47 @@
 package com.kodilla.mockito.homework;
 
-import com.kodilla.notification.Client;
 import com.kodilla.notification.Notification;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class WeatherService {
 
-    private Client client;
-    private Set<Location> location;
+    private Set<Person> client = new HashSet<>();
+    private Set<Location> location = new HashSet<>();
+    private int age;
 
-    public void addPerson(Person person) {
-        this.client = client;
+    public void addPerson(Person person, int age) {
+        this.client.add(person);
+        this.age = age;
     }
 
-    public void addLocation(Set<Location> location) {
-        this.location = location;
+    public void addLocation(Location location) {
+        this.location.add(location);
+    }
+
+    public void addPersonToLocation(Person person, Location location) {
+
+    }
+
+    public void sendNotification(Notification notification) {
+        if (location.equals(client)) {
+            this.client.forEach(client -> client.receive(notification));
+        }
     }
 
     public void sendNotificationToAll(Notification notification) {
-        this.client.receive(notification);
+        this.client.forEach(client -> client.receive(notification));
     }
 
-    public void sendNotificationToSubscribers(Notification notification) {
-        if(location.equals(client)) {
-            this.client.receive(notification);
+    public void sendNotificationToSubscribersInLocalization(Location location, Notification notification) {
+        if (location.equals(client)) {
+            this.client.forEach(client -> client.receive(notification));
         }
+    }
+
+    public void removePersonFromLocation(Person person, Location location) {
+
     }
 
     public void removeLocation(Set<Location> location) {
