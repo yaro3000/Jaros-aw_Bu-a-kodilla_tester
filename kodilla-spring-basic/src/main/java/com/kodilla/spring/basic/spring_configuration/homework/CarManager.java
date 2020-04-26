@@ -29,12 +29,4 @@ public class CarManager {
         }
         return car;
     }
-
-    public double timeChecker() {
-        int time = random.nextInt(25);
-        if (time > 20 && time < 6) {
-            return 20.00;
-        } else
-            return 6.00;
-    }
 }
