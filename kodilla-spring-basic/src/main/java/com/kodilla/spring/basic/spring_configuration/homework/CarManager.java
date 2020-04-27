@@ -16,15 +16,19 @@ public class CarManager {
         int season = random.nextInt(4);
         if (season == 0) {
             car = new SUV();
+            car.hasHeadlightsTurnedOn();
             System.out.println("Przyszła zima, najlepsze auto do wyboru to " + car.getCarType());
         } else if (season == 1) {
             car = new Sedan();
+            car.hasHeadlightsTurnedOn();
             System.out.println("Przyszła wiosna, najlepsze auto do wyboru to " + car.getCarType());
         } else if (season == 2) {
             car = new Cabrio();
+            car.hasHeadlightsTurnedOn();
             System.out.println("Przyszło lato, najlepsze auto do wyboru to " + car.getCarType());
         } else {
             car = new Sedan();
+            car.hasHeadlightsTurnedOn();
             System.out.println("Przyszła jesień, najlepsze auto do wyboru to " + car.getCarType());
         }
         return car;

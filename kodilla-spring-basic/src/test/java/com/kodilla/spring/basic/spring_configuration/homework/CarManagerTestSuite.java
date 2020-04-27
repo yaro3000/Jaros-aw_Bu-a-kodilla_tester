@@ -18,9 +18,11 @@ public class CarManagerTestSuite {
         Car car = (Car) context.getBean("randomCar");
 
         String seasonCar = car.getCarType();
+        boolean lights = car.hasHeadlightsTurnedOn();
         System.out.println(seasonCar);
 
         List<String> possibleChoices = Arrays.asList("Sedan", "SUV", "Cabriolet");
         Assertions.assertTrue(possibleChoices.contains(seasonCar));
+        Assertions.assertFalse(lights);
     }
 }
