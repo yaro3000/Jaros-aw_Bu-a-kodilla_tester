@@ -33,7 +33,7 @@ public class NumberDivisibleBySteps implements En {
             this.answer = numberChecker.checkNumber(this.number);
         });
 
-        Then("I should be told {string}", (String string) -> {
+        Then("I should be say {string}", (String string) -> {
             Assert.assertEquals(string, this.answer);
         });
     }

@@ -4,7 +4,7 @@ Feature: So the number is divisible
   Scenario Outline: Type number
     Given type number <number>
     When I ask what the given number is divisible
-    Then I should be told <answer>
+    Then I should be say <answer>
     Examples:
       | number | answer     |
       | 3      | "Fizz"     |
