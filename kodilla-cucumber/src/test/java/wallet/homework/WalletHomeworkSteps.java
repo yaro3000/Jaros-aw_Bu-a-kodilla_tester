@@ -34,11 +34,12 @@ public class WalletHomeworkSteps implements En {
         });
 
         Then("nothing should be dispensed", () -> {
-            Assert.assertEquals(100, wallet.getBalance());
+            Assert.assertTrue(wallet.checkTrue(100));
         });
 
         Then("I should be told that I have insufficient funds in my account", () -> {
-            System.out.println("I should be told that I have insufficient funds in my account");
+            Cashier cashier = new Cashier(cashSlot);
+            Assert.assertEquals("insufficient funds in my account", cashier.message(cashSlot.getContents(), 200));
         });
     }
 }

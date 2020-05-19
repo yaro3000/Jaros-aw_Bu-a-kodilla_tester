@@ -18,4 +18,11 @@ public class Wallet {
     public void debit(int money) {
         this.balance -= money;
     }
+
+    public boolean checkTrue(int value) {
+        if (value == balance) {
+            return true;
+        } else
+            return false;
+    }
 }

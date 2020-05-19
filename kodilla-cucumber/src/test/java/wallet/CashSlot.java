@@ -19,4 +19,5 @@ public class CashSlot {
         }
         return "transaction was successful";
     }
+
 }
